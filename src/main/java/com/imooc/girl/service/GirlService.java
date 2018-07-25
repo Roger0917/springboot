@@ -46,4 +46,11 @@ public class GirlService {
         //如果>16岁,加钱
         //...
     }
+
+    /**
+     * 通过ID查一个女生的信息
+     */
+    public Girl findOne(Integer id){
+         return girlRepository.findById(id).get();
+    }
 }
